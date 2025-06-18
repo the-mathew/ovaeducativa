@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:  #0a1f2eCC;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color:#0a1f2eCC;
+  color: white;
+  height: 50px;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* Hero section, aqui se encuentra la caja de los botones y la pantalla*/
+.hero {
+  background-color: #6eadec;
+  display: flex;
+  height: 94vh;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Navegación, aqui estan los botones*/
+.navegacion {
+  background-color: #0a1f2eCC;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  height: 100%;
+  width: 200px;
+}
+
+.navegacion button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 20px;
+  background-color: #2a9d8f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  width: 160px;
+}
+
+.navegacion button:hover {
+  background-color: #21867a;
+  transform: scale(1.03);
+}
+
+.navegacion button img {
+  width: 20px;
+  height: 20px;
+}
+
+.navegacion button span {
+  text-align: left;
+}
+
+/* Mostrador (iframe) */
+.mostrador {
+  flex-grow: 1;
+  display: flex;
+  justify-content:center;
+}
+
+.mostrador iframe {
+  background-color: #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Contenedor general, aqui esta el footer*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}

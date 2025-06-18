@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi sitio web</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilo de la pantalla de bienvenida */
+    #bienvenida {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #111;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    #bienvenida button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* Estilo del contenido principal (inicialmente oculto) */
+    #contenido {
+      display: none;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pantalla de bienvenida -->
+  <div id="bienvenida">
+    <h1>Bienvenido a mi sitio</h1>
+    <p>Haz clic en continuar para entrar</p>
+    <button onclick="mostrarContenido()">Continuar</button>
+  </div>
+
+  <!-- Contenido principal -->
+  <div id="contenido">
+    <h2>Contenido del sitio</h2>
+    <p>Este es el contenido que se muestra después de la bienvenida.</p>
+  </div>
+
+  <script>
+    function mostrarContenido() {
+      document.getElementById('bienvenida').style.display = 'none';
+      document.getElementById('contenido').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
